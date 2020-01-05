@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		843CC9A282812E20D7E15ED8 /* Pods_NetworkLayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C3B2183D280C87E7FB942D /* Pods_NetworkLayerDemo.framework */; };
+		9D7646AC23C1E52A00264ECB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7646AB23C1E52A00264ECB /* Constants.swift */; };
+		9D7646AE23C1E58800264ECB /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7646AD23C1E58800264ECB /* ApiRouter.swift */; };
 		9DA5559A23C1DCBD00C8686F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5559923C1DCBD00C8686F /* AppDelegate.swift */; };
 		9DA5559C23C1DCBD00C8686F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5559B23C1DCBD00C8686F /* SceneDelegate.swift */; };
 		9DA5559E23C1DCBD00C8686F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5559D23C1DCBD00C8686F /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		07C3B2183D280C87E7FB942D /* Pods_NetworkLayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkLayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B32F82A56D0F19039D9BFE2 /* Pods-NetworkLayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerDemo.release.xcconfig"; path = "Target Support Files/Pods-NetworkLayerDemo/Pods-NetworkLayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9D7646AB23C1E52A00264ECB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9D7646AD23C1E58800264ECB /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		9DA5559623C1DCBD00C8686F /* NetworkLayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA5559923C1DCBD00C8686F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA5559B23C1DCBD00C8686F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +60,16 @@
 				F3237A62F23A7F3D3F9E5620 /* Pods-NetworkLayerDemo.debug.xcconfig */,
 				2B32F82A56D0F19039D9BFE2 /* Pods-NetworkLayerDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D7646AA23C1E50A00264ECB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9D7646AB23C1E52A00264ECB /* Constants.swift */,
+				9D7646AD23C1E58800264ECB /* ApiRouter.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		9DA5558D23C1DCBD00C8686F = {
@@ -81,6 +93,7 @@
 		9DA5559823C1DCBD00C8686F /* NetworkLayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9D7646AA23C1E50A00264ECB /* Networking */,
 				9DA5559923C1DCBD00C8686F /* AppDelegate.swift */,
 				9DA5559B23C1DCBD00C8686F /* SceneDelegate.swift */,
 				9DA5559D23C1DCBD00C8686F /* ViewController.swift */,
@@ -209,7 +222,9 @@
 			files = (
 				9DA5559E23C1DCBD00C8686F /* ViewController.swift in Sources */,
 				9DA5559A23C1DCBD00C8686F /* AppDelegate.swift in Sources */,
+				9D7646AE23C1E58800264ECB /* ApiRouter.swift in Sources */,
 				9DA5559C23C1DCBD00C8686F /* SceneDelegate.swift in Sources */,
+				9D7646AC23C1E52A00264ECB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
