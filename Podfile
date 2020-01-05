@@ -8,5 +8,8 @@ target 'NetworkLayerDemo' do
   # Pods for NetworkLayerDemo
 
   pod 'Alamofire'
+	
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
 end
