@@ -7,7 +7,7 @@ target 'NetworkLayerDemo' do
 
   # Pods for NetworkLayerDemo
 
-  pod 'Alamofire'
+  pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'alamofire5'
 	
   pod 'RxSwift'
   pod 'RxCocoa'
